@@ -13,6 +13,14 @@
 </script>
 </head>
 <body>
+	<!-- 
+		2、这是一个javascript和DOM结合的一个简单例子
+		onclick="..." 表示点击button之后做的事情
+		document.getElementById 根据id获取指定的元素
+		.style.display='none' 隐藏
+		.style.display='block' 显示(准确的讲，以block的形式显示)
+		onclick，getElementById，style.display 这些内容，是HTML DOM 应该到才会用到的知识和概念
+	 -->
 	<button onclick="document.getElementById('text').style.display='none'">隐藏文本</button>
 	<button onclick="document.getElementById('text').style.display='block'">显示文本</button>
 	<p id="text">这个是一段可以被javascript隐藏的文本</p>
