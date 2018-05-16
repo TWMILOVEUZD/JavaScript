@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>类型转换-Number()和parseInt()的区别</title>
+<script type="text/javascript">
+	//6、Number()和parseInt()的区别
+	//Number()和parseInt()一样，都可以用来进行数字的转换
+	//区别在于，当转换的内容包含非数字的时候，Number() 会返回NaN(Not a Number)
+	//parseInt() 要看情况，如果以数字开头，就会返回开头的合法数字部分，如果以非数字开头，则返回NaN
+	document.write("通过Number() 函数转换字符串'123' 后得到的数字：" + Number("123"));
+	document.write("<br>");
+	document.write("通过Number() 函数转换字符串'123abc' 后得到的数字：" + Number("123abc"));
+	document.write("<br>");
+	document.write("通过Number() 函数转换字符串'abc123' 后得到的数字：" + Number("abc123"));
+	document.write("<br>");
+	
+	document.write("通过parseInt() 函数转换字符串'123' 后得到的数字：" + parseInt("123"));
+	document.write("<br>");
+	document.write("通过parseInt() 函数转换字符串'123abc' 后得到的数字：" + parseInt("123abc"));
+	document.write("<br>");
+	document.write("通过parseInt() 函数转换字符串'abc123' 后得到的数字：" + parseInt("abc123"));
+	document.write("<br>");
+	document.write("通过parseFloat() 函数转换字符串'123' 后得到的数字：" + parseFloat("123"));
+</script>
+</head>
+<body>
+
+</body>
+</html>
