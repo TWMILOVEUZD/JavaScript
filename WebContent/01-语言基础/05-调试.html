@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>调试</title>
+<script type="text/javascript">
+	//1、alert调试
+	//alert(1);
+	x = 10;
+	document.write("没有用var声明的变量x的值：" + x);
+	//alert(2);
+	//2、使用专业的调试工具：这里以火狐为例
+	y = 10;
+	//document.write1("这是这是一段故意写错的write方法的javascript代码");
+	//3、console.log()
+	//类似于 alert进行调试， firebug有一个日志输出工具console.log().
+	//不同于alert的缺点( 弹出屏幕，阻挡所有其他操作)，console.log() 只会把信息输出在console里，而不会影响用户的使用。 用户甚至意识不到console.log()的存在
+	z = 10;
+	console.log("x="+z);
+	document.write("没有用var声明的变量x的值:"+z);
+	console.log("end");
+</script>
+</head>
+<body>
+	
+</body>
+</html>
