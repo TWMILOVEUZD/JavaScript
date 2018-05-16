@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>基本数据类型-变量类型判断</title>
+<script type="text/javascript">
+	//6、变量类型判断
+	//使用typeof来进行判断数据类型
+	//正是因为变量是动态类型的，所以无法确定当前到底是哪种类型，这个时候，就可以使用typeof来进行判断
+	var x;
+	document.write('声明了但是未赋值的时候，类型是： ' + typeof x);
+	document.write('<br>');
+	x = 5;
+	document.write("赋值为5之后，类型是：" + typeof x);
+	document.write('<br>');
+	x = 5.1;
+	document.write("赋值为5.1之后，类型是：" + typeof x);
+	document.write('<br>');
+	x = true;
+	document.write("赋值为true之后，类型是： " + typeof x);
+	document.write('<br>');
+	x = "hello";
+	document.write("赋值为hello之后，类型是：" + typeof x);
+</script>
+</head>
+<body>
+
+</body>
+</html>
