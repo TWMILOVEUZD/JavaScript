@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>类型转换-String()和toString()的区别</title>
+<script type="text/javascript">
+	//7、String和toString的区别
+	//String()和toString()一样都会返回字符串，区别在于对null的处理
+	//String()会返回字符串"null"
+	//toString() 就会报错，无法执行
+	var a = null;
+	document.write('String(null) 把空对象转换为字符串：' + String(a));
+	document.write("<br>");
+	document.write('null.toString() 就会报错，所以后面的代码不能执行'); 
+	document.write(a.toString());
+	document.write("因为第15行报错，所以这一段文字不会显示"); 
+</script>
+</head>
+<body>
+
+</body>
+</html>
