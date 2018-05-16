@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>类型转换-转换为Boolean</title>
+<script type="text/javascript">
+	//5、转换为Boolean
+	//使用内置函数Boolean() 转换为Boolean值
+	//当转换字符串时：
+	//非空即为true
+	//当转换数字时：
+	//非0即为true
+	//当转换对象时：
+	//非null即为true
+	document.write("空字符串''转换为布尔后的值：" + Boolean(""));//空字符串
+	document.write("<br>");
+	document.write("一个空格的字符串' '转换为布尔后的值：" + Boolean(" "));//一个空格的字符串
+	document.write("<br>");
+	document.write("非空字符'hello javascript '串转换为布尔后的值：" + Boolean("Hello javascript"));
+	document.write("<br>");
+	document.write("数字 0 转换为布尔后的值：" + Boolean(0));
+	document.write("<br>");
+	document.write("数字 1转换为布尔后的值：" + Boolean(1));
+	document.write("<br>");
+	document.write("数字2 转换为布尔后的值：" + Boolean(2));
+	document.write("<br>");
+	document.write("数字 3.14转换为布尔后的值：" + Boolean(3.14));
+	document.write("<br>");
+	document.write("空对象 null 转换为布尔后的值：" + Boolean(null));
+	document.write("<br>");
+	document.write("非空对象 new Object() 转换为布尔后的值：" + Boolean(new Object()));
+	document.write("<br>");
+</script>
+</head>
+<body>
+
+</body>
+</html>
