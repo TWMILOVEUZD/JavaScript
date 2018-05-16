@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>转换为数字</title>
+<script type="text/javascript">
+	//4、转换为数字
+	//javascript分别提供内置函数 parseInt()和parseFloat()，转换为数字
+	//注：如果被转换的字符串，同时由数字和字符构成，那么parseInt会一直定位数字，直到出现非字符。 所以"10abc" 会被转换为 10
+	//思考题: 字符串"10abc8" 又会被转换为多少呢？
+	document.write("字符串的\"10\" 转换为数字的：" + parseInt("10"));//转换整数
+	document.write("<br>");
+	document.write("字符串的\"3.14\"转换为数字的：" + parseFloat("3.14"));
+	document.write("<br>");
+	document.write("字符串的\"10abc\"转换为数字的：" + parseInt("10abc"));
+	document.write("<br>");
+	document.write("字符串的\"hello javascript\"转换为数字的：" + parseInt("hello javascript"));
+	document.write("<br>");
+	document.write("字符串的\"10abc8\"转换为数字的：" + parseInt("10abc8"));
+	document.write("<br>");
+</script>
+</head>
+<body>
+	
+</body>
+</html>
