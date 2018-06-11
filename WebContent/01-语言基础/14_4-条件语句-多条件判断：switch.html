@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>条件语句-多条件判断：switch</title>
+<script type="text/javascript">
+	/*
+		if条件一定是一个Boolean类型的值，当为true时，执行对应的语句
+		else表示当条件不成立时执行的代码
+		else if 用于多条件判断
+		
+		switch 语句与else if一样，也是进行多条件判断的
+		需要注意的是，每个判断结束，都要加上break;
+	*/
+	var day = new Date().getDay();//通过日期对象获取数字形式的星期几
+	var today;
+	switch(day){
+	case 0:
+		today="星期天";
+		break;
+	case 1:
+		today="星期一";
+		break;
+	case 2:
+		today="星期二";
+		break;	
+	case 3:
+		today="星期三";
+		break;	
+	case 4:
+		today="星期四";
+		break;	
+	case 5:
+		today="星期五";
+		break;
+	case 6:
+		today="星期六";
+		break;	
+	}
+	document.write("今天是：" + today);
+</script>
+</head>
+<body>
+	
+</body>
+</html>
