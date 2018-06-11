@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>绝对等，绝对不等于</title>
+<script type="text/javascript">
+	function p(s){
+		document.write(s);
+		document.write('<br>');
+		
+	}
+	/*
+		与==进行值是否相等的判断不同 ，绝对等 ===还会进行 类型的判断
+		比如 数字1和 字符串'1'比较，值是相等的，但是类型不同
+		所以==会返回true,但是===会返回false
+		绝对不等于!== 与上是一个道理
+	*/
+	p("1 == '1' :" + (1 == '1'));
+	p("1 === '1' :" + (1 === '1'));
+</script>
+</head>
+<body>
+
+</body>
+</html>
