@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>创建一个数字对象</title>
+<script type="text/javascript">
+	/*
+		可以通过new Number()创建一个数字对象
+		与基本类型的数字不同，对象类型的数字，拥有更多的属性和方法
+		接下来就会讲解各种属性和方法
+	*/
+	var x = new Number(123);
+	document.write('数字对象x的值：' + x);
+	p("<br>");
+	document.write("数字对象x的类型：" + typeof x);//通过typeof 获知这是一个object
+	p("<br>");
+	
+	var y = 123;
+	document.write("基本类型y的值：" + y);
+	p("<br>");
+	document.write("基本类型y的类型：" + typeof y);//通过typeof 获知这是一个number
+	
+	function p(s) {
+		document.write(s);
+	}
+</script>
+</head>
+<body>
+
+</body>
+</html>
