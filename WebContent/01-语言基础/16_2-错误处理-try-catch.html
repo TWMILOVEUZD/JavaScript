@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>错误处理-try-catch</title>
+<script type="text/javascript">
+	document.write("试图调用不存在的函数f2()就会报错，并且导致javascript中止执行，后面的代码也不会执行了");
+	function f1(){
+		//函数f1是存在的
+	}
+	
+	try {
+		document.write("试图调用不存在的函数f2()<br>");
+		f2();
+	} catch (err) {
+		document.write("捕捉到错误产生：");
+		document.write(err.message);
+		document.write("<br>");
+	}
+	document.write("剩下的代码");
+	document.write("<p>因为错误被捕捉了，所以后续的代码能够继续执行</p>");
+</script>
+</head>
+<body>
+
+</body>
+</html>
