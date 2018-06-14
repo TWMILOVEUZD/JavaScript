@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>数字：返回一个数字的科学计数法表达</title>
+<script type="text/javascript">
+	/*
+		toExponential:返回一个Number对象的科学计数法表达
+	*/
+	function print(s) {
+		document.write(s);
+		document.write("<br>");
+	}
+	var a = new Number("123");
+	print("数字对象123通过toExponential 返回计数法表达 " + a.toExponential());
+	var b = new Number("3.141592653");
+	print("数字对象3.1415926通过toExponential 返回计数法表达 " + b.toExponential());
+</script>
+</head>
+<body>
+	
+</body>
+</html>
