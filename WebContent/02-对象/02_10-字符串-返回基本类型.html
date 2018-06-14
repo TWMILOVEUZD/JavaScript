@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>字符串-返回基本类型</title>
+<script type="text/javascript">
+	function p(s) {
+		document.write(s);
+		document.write("<br>");
+	}
+	
+	var x = new String("Hello JavaScript");
+	p("x的类型是：" + (typeof x));
+	
+	var temp = x.charAt(0);
+	p('charAt返回的值' + temp);
+	p('其类型是' + (typeof temp));
+	
+	var temp = x.concat("!!!");
+	p('concat返回的值：' + temp);
+	p('其类型是：' + (typeof temp));
+	
+	var temp = x.substring(0, 5);
+	p("substring返回的值：" + temp);
+	p("其类型是：" + typeof temp);
+</script>
+</head>
+<body>
+
+</body>
+</html>
