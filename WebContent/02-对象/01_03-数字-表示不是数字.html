@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>表示不是数字</title>
+<script type="text/javascript">
+	/*
+		NaN(Not a Number),表示不是一个数字
+		当通过非数字创建Number的时候，就会得到NaN.
+		注意： 不能通过 是否等于Number.NaN来判断 是否 “不是一个数字”，应该使用函数 isNaN()
+	*/
+	function print(s) {
+		document.write(s);
+		document.write("<br>");
+	}
+	var a = new Number("123abc");//通过非数字创建Number对象，得到的是一个NaN
+	print('通过非数字字符串"123abc"创建出来的Number对象 a的值是：' + a);
+	print('但是, a==Number.NaN会返回:' + (a==Number.NaN));
+	print('但是, a==Number.NaN会返回:' + isNaN(a));
+	
+	var b = new Number(123);
+	var c = new Number("123");
+	print(b);
+	print(b==Number.NaN);
+	print(isNaN(b));
+	print("----------------------------------------");
+	print(c);
+	print(c==Number.NaN);
+	print(isNaN(c));
+</script>
+</head>
+<body>
+	
+</body>
+</html>
