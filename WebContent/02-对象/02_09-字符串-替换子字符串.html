@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>字符串-替换子字符串</title>
+<script type="text/javascript">
+	/*
+		replace(search,replacement)
+		找到满足条件的子字符串search，替换为replacement
+		注: 默认情况下只替换找到的第一个子字符串，如果要所有都替换，需要写成：
+		x.replace(/a/g, "o");
+		或者
+		var regS = new RegExp("a","g");
+		x.replace(regS, "o");
+	*/	
+	function p(s) {
+		document.write(s);
+		document.write("<br>");		
+	}
+	var x = new String("Hello JavaScript");
+	p('这是原字符串：' + x);
+	var y = x.replace("a", "o");
+	p("只替换第一个a：" + y);
+	var regS = new RegExp("a","g");
+	var z = x.replace(regS, "o");
+	p("替换掉所有的a：" + z);
+</script>
+</head>
+<body>
+	
+</body>
+</html>
