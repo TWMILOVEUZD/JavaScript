@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>数组：分别在最后的位置插入数据和获取数据(获取后删除)</title>
+<script type="text/javascript">
+	/*
+		方法 push pop,分别在最后的位置插入数据和获取数据(获取后删除) 
+		就像先入后出的栈一样
+	*/
+	function p(s){
+	  document.write(s);
+	  document.write("<br>");
+	}
+	var x = new Array(3,1,4);
+	p('数组x是：' + x);
+	x.push(5);
+	p('向x中push5，得到：' + x);
+	var e = x.pop();
+	p('从x中pop一个值出来，其值是：' + e);
+	p('pop之后，x数组的值是：' + x);
+</script>
+</head>
+<body>
+
+</body>
+</html>
