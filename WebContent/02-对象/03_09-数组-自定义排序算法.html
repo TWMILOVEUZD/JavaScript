@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>自定义排序算法</title>
+<script type="text/javascript">
+	/*
+		sort()默认采用正排序，即小的数排在前面。 如果需要采用自定义排序的算法，就把比较器函数作为参数传递给sort()。
+		比较器函数:
+		function comparator(v1,v2){
+		   return v2-v1;  //v2-v1表示大的放前面，小的放后面
+		}
+		调用sort函数的时候，把这个比较器函数comparator作为参数传递进去即可
+		x.sort(comparator);
+	*/
+	function p(s) {
+		document.write(s);
+		document.write("<br>");
+	}
+	function comparator(v1,v2) {
+		return v2 - v1;//v2-v1表示大的放前面，小的放后面
+	}
+	var x = new Array(3,1,4,1,5,9,2,6,5,3);
+	p('数组x是： ' + x);
+	x.sort(comparator);
+	p('使用sort进行自定义倒排序后的数组x是：' + x);
+</script>
+</head>
+<body>
+
+</body>
+</html>
