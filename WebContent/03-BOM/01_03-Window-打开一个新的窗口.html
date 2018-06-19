@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Window：打开一个新的窗口</title>
+<script type="text/javascript">
+	/*
+		有的时候，你碰到一些网站会自动打开另一个网站，那么是怎么做到的呢? 
+		就是通过window的open方法做到的 
+		不建议使用，如果需要打开一个新的网站，应该通过超级链接等方式让用户主动打开，
+		在没有告知用户的前提下就打开一个新的网站会影响用户的体验
+	*/
+	function openNewWindow() {
+		myWindow = window.open("/");
+	}
+</script>
+</head>
+<body>
+	<button onclick="openNewWindow()">打开一个新的窗口</button>
+</body>
+</html>
