@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>日期：修改日期和时间</title>
+<script type="text/javascript">
+	/*
+		把日期对象设置为2012/12/12 00:00:00
+	*/
+	var d = new Date();
+	document.write("修改日期对象的值为世界末日:<br>");
+	d.setFullYear(2012);
+	d.setMonth(11);//月份时基0的，所以11表示12月
+	d.setDate(12);
+	
+	d.setHours(0);
+	d.setMinutes(0);
+	d.setSeconds(0);
+	
+	document.write(d);
+</script>
+</head>
+<body>
+
+</body>
+</html>
