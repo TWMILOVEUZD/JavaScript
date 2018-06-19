@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>自定义对象：为已经存在的对象，增加新的方法</title>
+<script type="text/javascript">
+	/*
+		现在Hero对象已经设计好了，但是我们发现需要追加一个新的方法keng(),那么就需要通过prototype实现这一点
+	*/
+	function Hero(name) {
+		this.name = name;
+		this.kill = function(){
+			document.write(this.name + "正在杀敌<br>");
+		}
+	}
+	var gareen = new Hero("盖伦");
+	gareen.kill();
+	
+	var teemo = new Hero("提莫");
+	teemo.kill();
+	
+	Hero.prototype.keng = function(){
+		document.write(this.name + "正在肯定队友<br>");
+	}
+	
+	gareen.keng();
+	teemo.keng();
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>
