@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>日期：年、月、日</title>
+<script type="text/javascript">
+	/*
+		分别获取年/月/日
+		需要注意的是，getMonth()返回的月数，是基零的，0代表1月份
+	*/
+	var d = new Date();
+	document.write('分别获取年、月、日：');
+	document.write(d.getFullYear());
+	document.write("/");
+	document.write(d.getMonth() + 1);
+	document.write("/");
+	document.write(d.getDate());
+</script>
+</head>
+<body>
+
+</body>
+</html>
