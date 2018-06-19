@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>自定义对象：通过function设计一个对象</title>
+<script type="text/javascript">
+	/*
+		通过new Object创建对象有个问题，就是每创建一个对象，都得重新定义属性和函数。这样代码的重用性不好
+		那么，采用另一种方式，通过function设计一种对象。 然后实例化它 。
+		这种思路很像Java里的设计一种类，但是 javascript没有类，只有对象，所以我们叫设计一种对象
+	*/
+	function Hero(name){
+		this.name = name;
+		this.kill = function() {
+			document.write(this.name + "正在杀敌<br>");
+		}
+	}
+	
+	var gareen = new Hero("盖伦");
+	gareen.kill();
+	
+	var teemo = new Hero("提莫");
+	teemo.kill();
+</script>
+</head>
+<body>
+
+</body>
+</html>
