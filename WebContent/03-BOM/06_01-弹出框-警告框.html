@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>弹出框：警告框</title>
+<script type="text/javascript">
+	/*
+		浏览器上常见的弹出框有 
+		警告框，确认框，提示框 这些都是通过调用window的方法实现的。 
+		比如警告框用的是window.alert("警告内容")，因为很常用，所以就把window省略掉，直接使用alert
+	*/
+	//警告框 alert，常用于消息提示，比如注册成功等等
+	
+	function register() {
+		alert("注册成功");
+	}
+</script>
+</head>
+<body>
+	<button onclick="register()">注册</button>
+</body>
+</html>
