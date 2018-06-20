@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>History：返回上上次的访问</title>
+<script type="text/javascript">
+	function goBack() {
+		console.log(1);
+		history.go(-2);//-1表示上次，-2表示上上次
+		console.log(2);
+	}
+</script>
+</head>
+<body>
+	<button onclick="goBack()">返回上上次</button>
+</body>
+</html>
