@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Location：刷新当前页面</title>
+<script type="text/javascript">
+	/*
+		reload方法刷新当前页面
+	*/
+	var d = new Date();
+	document.write(d.getHours());
+	document.write(":");
+	document.write(d.getMinutes());
+	document.write(":");
+	document.write(d.getSeconds());
+	document.write(":");
+	document.write(d.getMilliseconds());
+	document.write("<br>");
+	function refresh() {
+		location.reload();
+	}
+</script>
+</head>
+<body>
+	<button onclick="refresh()">刷新当前页面</button>
+</body>
+</html>
