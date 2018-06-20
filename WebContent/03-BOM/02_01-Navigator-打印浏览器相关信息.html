@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Navigator：打印浏览器相关信息</title>
+<script type="text/javascript">
+	/*
+		Navigator即浏览器对象，提供浏览器相关的信息
+		浏览器产品名称：Netscape
+		浏览器版本号：5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36
+		浏览器内部代码：Mozilla
+		操作系统：Win32
+		是否启用Cookies：true
+		浏览器的用户代理报头：Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36
+	*/
+	document.write("浏览器产品名称：");
+	document.write(navigator.appName);
+	document.write("<br>");
+	document.write("浏览器版本号：");
+	document.write(navigator.appVersion);
+	document.write("<br>");
+	document.write("浏览器内部代码：");
+	document.write(navigator.appCodeName);
+	document.write("<br>");
+	document.write("操作系统：");
+	document.write(navigator.platform);
+	document.write("<br>");
+	document.write("是否启用Cookies：");
+	document.write(navigator.cookieEnabled);
+	document.write("<br>");
+	document.write("浏览器的用户代理报头：");
+	document.write(navigator.userAgent);
+</script>
+</head>
+<body>
+
+</body>
+</html>
