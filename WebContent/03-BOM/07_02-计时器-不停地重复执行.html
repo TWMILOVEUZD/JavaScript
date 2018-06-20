@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>计时器：不停地重复执行</title>
+<script type="text/javascript">
+	/*
+		函数setInterval(函数名, 重复执行的时间间隔毫秒数 );
+		通过setInterval重复执行同一个函数，重复的时间间隔由第二个参数指定
+	*/
+	document.write("<p>每隔1秒，打印当前时间：</p>");
+	function printTime() {
+		var d = new Date();
+		var h = d.getHours();
+		var m = d.getMinutes();
+		var s = d.getSeconds();
+		var ms = d.getMilliseconds();
+		document.getElementById("time").innerHTML = h + ":" + m + ":" + s + ":" + ms;
+	}
+	var t = setInterval(printTime, 1000);
+</script>
+</head>
+<body>
+	<div id="time"></div>
+</body>
+</html>
