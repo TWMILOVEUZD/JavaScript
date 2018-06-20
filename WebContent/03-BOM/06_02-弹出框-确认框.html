@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>弹出框：确认框</title>
+<script type="text/javascript">
+	/*
+		确认框 confirm，常用于危险性操作的确认提示。 比如删除一条记录的时候，弹出确认框
+		confirm返回基本类型的Boolean true或者false
+	*/
+	function del() {
+		var d = confirm("是否要删除");
+		alert(typeof d + " " + d);
+	}
+</script>
+</head>
+<body>
+	<button onclick="del()">删除</button>
+</body>
+</html>
