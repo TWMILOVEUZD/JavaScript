@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>计时器：不要在setInterval调用的函数中使用document.write();</title>
+<script type="text/javascript">
+	/*
+		注：部分浏览器，比如firefox有这个问题，其他浏览器没这个问题。
+		假设setInterval调用的函数是printTime, 在printTime中调用document.write();
+		只能看到一次打印时间的效果。
+		这是因为document.write，会创建一个新的文档，而新的文档里，只有打印出来的时间字符串，并没有setInterval这些javascript调用，所以只会看到执行一次的效果。
+	*/
+	function printTime() {
+		var d = new Date();
+		document.write(d.getHours());
+		document.write(":");
+		document.write(d.getMinutes());
+		document.write(":");
+		document.write(d.getSeconds());
+		document.close();
+	}
+	var t = setInterval(printTime, 1000);
+</script>
+</head>
+<body>
+	<p>每隔1秒钟，通过document.write打印当前时间</p>
+</body>
+</html>
