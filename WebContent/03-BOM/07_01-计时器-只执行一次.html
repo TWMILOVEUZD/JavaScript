@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>计时器-只执行一次</title>
+<script type="text/javascript">
+	/*
+		函数setTimeout(functionname, 距离开始时间毫秒数 ); 
+		通过setTimeout在制定的毫秒数时间后，执行一次 函数functionname 
+		本例在3秒钟后，打印当前时间。 
+		解释: 
+		document.getElementById 获取id=time的div元素 
+		.innerHTML 修改该元素的内容 
+	*/
+	function printTime() {
+		var d = new Date();
+		var h = d.getHours();
+		var m = d.getMinutes();
+		var s = d.getSeconds();
+		document.getElementById("time").innerHTML = h + ":" + m + ":" + s;
+	}
+	
+	function showTimeIn3Seconds() {
+		setTimeout(printTime, 3000);
+	}
+</script>
+</head>
+<body>
+	<div id="time">
+	</div>
+	<button onclick="showTimeIn3Seconds()">点击后3秒钟后显示当前时间，并且只显示一次</button>
+</body>
+</html>
