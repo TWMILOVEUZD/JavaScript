@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>弹出框：输入框</title>
+<script type="text/javascript">
+	/*
+		输入框 prompt，用于弹出一个输入框，供用户输入相关信息。 因为弹出的界面并不好看，很有可能和网站的风格不一致，所以很少会在实际工作中用到。
+	*/
+	function p() {
+		var name = prompt("请输入用户名：");
+		alert("您输入的用户名是：" + name);
+	}
+</script>
+</head>
+<body>
+	<button onclick="p()">请输入用户名</button>
+</body>
+</html>
